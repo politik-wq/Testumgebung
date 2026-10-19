@@ -398,7 +398,7 @@ footer{background:var(--blk);padding:56px 48px 40px}
     </ul></div>
     <div class="flinks"><h4>Extern</h4><ul>
       <li><a href="https://www.land-oberoesterreich.gv.at" target="_blank">Land OÖ</a></li>
-      <li><a href="https://www.ooevp.at" target="_blank">OÖ Volkspartei</a></li>
+      <li><a href="https://www.ooevp.at" target="_blank">ÖVP Oberösterreich</a></li>
     </ul></div>
     <div class="flinks"><h4>Rechtliches</h4><ul>
       <li><a href="https://www.ooevp.at/impressum/" target="_blank">Impressum</a></li>
@@ -458,9 +458,9 @@ const map = L.map('lmap', {
   attributionControl: false
 });
 
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-  attribution: '©OpenStreetMap ©CARTO',
-  subdomains: 'abcd', maxZoom: 15
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Esri, HERE, Garmin, ©OpenStreetMap',
+  maxZoom: 16
 }).addTo(map);
 L.control.attribution({position: 'bottomleft'}).addTo(map);
 
